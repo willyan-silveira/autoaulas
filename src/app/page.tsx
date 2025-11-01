@@ -1,5 +1,5 @@
 "use client";
-
+//teste commit
 import { Hero } from "../components/hero";
 import { About } from "../components/about";
 import FilterBar from "../components/FilterBar";
