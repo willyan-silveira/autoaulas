@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export function Hero(){
     return(
-        <section className="relative min-h-[600px] flex items-center overflow-hidden px-8">
+        <section className="relative min-h-[400px] flex items-center overflow-hidden px-8">
 
             <div 
                 className="absolute inset-0 bg-cover bg-center "
@@ -32,20 +32,24 @@ export function Hero(){
             Aprenda a dirigir com segurança e confiança.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 p-2 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          
+          {/* <div className="flex flex-col sm:flex-row gap-3 p-2 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
               <Input 
                 placeholder="Buscar por cidade ou região..." 
                 className="pl-10 h-12 border-0 bg-transparent focus-visible:ring-0"
               />
-            </div>
+            </div> 
+            
+
             <Button size="lg" className="text-base bg-gradient-to-r h-12 px-8 from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700">
               Buscar Instrutores
             </Button>
-          </div>
+          </div>*/}
         </div>
-      </div>
+      </div> 
 
         </section>  
     )
