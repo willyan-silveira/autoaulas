@@ -1,5 +1,6 @@
 import { Car, Bike } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export function Header() {
  return (
@@ -28,9 +29,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" >
-            Entrar
-          </Button>
+          <Link href="/entrar/_app">
+            <Button variant="ghost" size="sm" >
+              Entrar
+            </Button>
+          </Link>
           <Button size="sm" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700"  >
             Cadastrar
           </Button>
