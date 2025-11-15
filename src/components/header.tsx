@@ -29,7 +29,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link href="/entrar/_app">
+          <Link href="/entrar/">
             <Button variant="ghost" size="sm" >
               Entrar
             </Button>
