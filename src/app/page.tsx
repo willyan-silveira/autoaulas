@@ -7,6 +7,7 @@ import { Header } from "../components/header";
 import InstructorCard from "@/components/InstructorCard";
 import { instructors } from "@/data/instructors";
 import { useState, useMemo } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
   export default function Home() {
 
