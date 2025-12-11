@@ -11,7 +11,7 @@ import { useState, useMemo } from "react";
 
   export default function Home() {
 
-      const [activeFilter, setActiveFilter] = useState<"all" | "car" | "moto">("all");
+  const [activeFilter, setActiveFilter] = useState<"all" | "car" | "moto">("all");
   const [selectedState, setSelectedState] = useState("all");
   const [selectedCity, setSelectedCity] = useState("all");
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("all");
@@ -139,11 +139,10 @@ import { useState, useMemo } from "react";
     </div>
   </div>
 </section>
-
       
       <footer className="border-t border-border py-8 mt-20">
         <div className="container text-center text-muted-foreground">
-          <p>© 2025 AutoAulas. Conectando alunos e instrutores com segurança. Todos os direitos reservados.</p>
+          <p>© 2026 AutoAulas. Conectando alunos e instrutores com segurança. Todos os direitos reservados.</p>
         </div>
       </footer>
    

@@ -1,8 +1,11 @@
 import { Car, Bike } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 
 export function Header() {
+  const router = useRouter();
  return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur dark:border-gray-800 dark:bg-gray-900/95 px-6">
       <div className="container flex h-16 items-center justify-between">
@@ -29,14 +32,17 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link href="/entrar">
-            <Button variant="ghost" size="sm" >
+                      
+            <Button variant="ghost" size="sm" onClick={() => router.push("/entrar")}>
               Entrar
             </Button>
+      
+          <Link href="/cadastrar">
+            <Button size="sm" className="bg-gradient-to-r from-blue-500
+             to-blue-600 text-white hover:from-blue-600 hover:to-blue-700"  >
+              Cadastrar
+            </Button>
           </Link>
-          <Button size="sm" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700"  >
-            Cadastrar
-          </Button>
         </div>
       </div>
     </header>
