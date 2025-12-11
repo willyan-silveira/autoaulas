@@ -64,7 +64,7 @@ export default function EntrarPage({ className, ...props }: React.ComponentProps
           </h2>  
           
           <CardDescription>
-            Conecte-se com instrutores de direção ou cadastre-se como instrutor
+            Conecte-se com instrutores de direção ou cadastre-se como instrutor.
           </CardDescription>
         </CardHeader>
         <CardContent>
