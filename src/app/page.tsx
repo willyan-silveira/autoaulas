@@ -8,7 +8,6 @@ import InstructorCard from "@/components/InstructorCard";
 import { instructors } from "@/data/instructors";
 import { useState, useMemo } from "react";
 
-
   export default function Home() {
 
   const [activeFilter, setActiveFilter] = useState<"all" | "car" | "moto">("all");
