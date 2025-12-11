@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { cn } from '@/lib/utils'
-import { supabaseBrowser } from '@/lib/supabase/client'
+import { createClient } from '@/lib/supabase/client'
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -24,7 +24,7 @@ export default function EntrarPage({ className, ...props }: React.ComponentProps
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault()
-    const supabase = supabaseBrowser
+    const supabase = createClient()
     setIsLoading(true)
     setError(null)
  
